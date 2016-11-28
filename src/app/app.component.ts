@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import * from 'hammer'
 
 @Component({
@@ -8,4 +8,9 @@ import * from 'hammer'
 })
 export class AppComponent {
   title = 'app works!';
+  @ViewChild('slidebar') slidebar;
+
+  toggleSidebar(){
+    this.slidebar.toggle()
+  }
 }

@@ -8,12 +8,16 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PostlistComponent } from './postlist/postlist.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    PostlistComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

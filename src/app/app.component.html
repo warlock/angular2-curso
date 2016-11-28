@@ -1,10 +1,9 @@
 <md-sidenav-layout fullscreen>
-  <app-header></app-header>
-  <md-sidenav #start (open)="closeStartButton.focus()" mode="side" opened="true" class="filtros_slidebar">
+  <app-header (togglesidebar)="toggleSidebar()" >
+  </app-header>
+  <md-sidenav #slidebar mode="side" opened="true" class="filtros_slidebar">
     <app-sidebar></app-sidebar>
   </md-sidenav>
 
-  My regular content. This will be moved into the proper DOM at runtime.
-  <button md-button (click)="start.open()">Open start sidenav</button>
 
 </md-sidenav-layout>
