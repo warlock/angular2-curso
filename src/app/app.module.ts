@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { PostComponent } from './post/post.component';
+import { HttpserviceService } from './services/httpservice.service.ts';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { PostComponent } from './post/post.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [HttpserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

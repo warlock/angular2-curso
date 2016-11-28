@@ -1,4 +1,23 @@
 <md-toolbar color="accent">
+  <span>Filtros</span>
 </md-toolbar>
 
-<p>filtros....</p>
+<md-input [(ngModel)]="filtros.titular" placeholder="Titular">
+</md-input>
+
+<div class="tag">
+  <md-checkbox [checked]="true" class="tag">
+    Tag 1
+  </md-checkbox>
+</div>
+<div class="tag">
+  <md-checkbox [checked]="true" class="tag">
+    Tag 2
+  </md-checkbox>
+</div>
+<div class="tag">
+  <md-checkbox [checked]="true" class="tag">
+    Tag 3
+  </md-checkbox>
+</div>
+<button md-raised-button color="primary" class="btn" (click)="filtrar()">Filtrar</button>

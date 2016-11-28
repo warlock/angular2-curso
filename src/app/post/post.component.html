@@ -1,3 +1,14 @@
-<p>
-  post works!
-</p>
+<md-card class="post">
+   <md-card-subtitle>{{post.author}}</md-card-subtitle>
+   <md-card-title>{{post.title}}</md-card-title>
+   <md-card-content>
+     <p>{{post.content}}</p>
+    <p>This is supporting text.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+   </md-card-content>
+   <md-card-actions>
+        <button md-button>LEER</button>
+        <button md-button>SHARE</button>
+   </md-card-actions>
+</md-card>
