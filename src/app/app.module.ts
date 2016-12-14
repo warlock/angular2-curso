@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { PostComponent } from './post/post.component';
-import { HttpserviceService } from './services/httpservice.service.ts';
+import { HttpserviceService } from './services/httpservice.service';
 
 @NgModule({
   declarations: [

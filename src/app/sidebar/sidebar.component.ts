@@ -7,17 +7,17 @@ import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  @Output() filtrar = new EventEmitter<>()
+  @Output() filtrar = new EventEmitter<any>()
   filtros: any = {
     titular: ""
   }
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
-  filtrar() {
+  filtrar_aux() {
     this.filtrar.emit(this.filtros)
   }
 

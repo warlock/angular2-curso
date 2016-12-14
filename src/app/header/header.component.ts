@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() togglesidebar = new EventEmitter<>()
+  @Output() togglesidebar = new EventEmitter<any>()
   title: String = "Titulo"
 
   constructor() { }

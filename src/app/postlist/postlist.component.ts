@@ -13,11 +13,13 @@ export class PostlistComponent implements OnInit {
   constructor(private service: HttpserviceService) { }
 
   ngOnInit() {
+    /*
     this.service.socket.on('AllArticles', function(data) {
       console.log(data)
       this.posts = data.articles
     }.bind(this));
     this.service.loadArticles()
+    */
   }
 
 }

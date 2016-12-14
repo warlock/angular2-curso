@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import * from 'hammer'
+import { Component,ViewChild } from '@angular/core';
+//import * from 'hammer'
 
 @Component({
   selector: 'app-root',
